@@ -1,4 +1,7 @@
 ﻿*/nbproject
+*/nbproject/private/
+*/build/
+*.class
 /Lecture05/nbproject/private/
 /Lecture05/build/
-*/build/
+/Lecture06/nbproject/private/
