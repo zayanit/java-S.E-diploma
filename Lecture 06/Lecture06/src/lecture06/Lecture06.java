@@ -39,7 +39,7 @@ public class Lecture06 {
         System.out.println(value);
         System.out.println(value + 2);*/
 
-        String str = input.next();
+        /*String str = input.next();
         int k = str.indexOf('.');
         String integerPart = str.substring(0, k);
         String fractionPart = str.substring(++k);
@@ -51,7 +51,17 @@ public class Lecture06 {
         System.out.println(ivalue);
 
         int fvalue = Integer.parseInt(fractionPart);
-        System.out.println(fvalue);
+        System.out.println(fvalue);*/
+        
+        /*System.out.printf("%-10s%-10s%-10s%-10s%-10s\n", "Degrees", "Radians", "Sine", "cosine", "Tangent");
+        //System.out.printf("%10s%10s%10s%10s%10s\n", "Degrees", "Radians", "Sine", "cosine", "Tangent");
+        
+        int degrees = 30;
+        double radians = Math.toRadians(degrees);
+        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f\n", degrees, radians, Math.sin(radians), Math.cos(radians), Math.tan(radians));
+        
+        degrees = 60;
+        radians = Math.toRadians(degrees);
+        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f\n", degrees, radians, Math.sin(radians), Math.cos(radians), Math.tan(radians));*/   
     }
-    
 }
