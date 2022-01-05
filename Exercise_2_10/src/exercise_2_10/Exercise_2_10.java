@@ -13,7 +13,6 @@ package exercise_2_10;
  *
  * @author zayan
  */
-
 import java.util.Scanner;
 
 public class Exercise_2_10 {

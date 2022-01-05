@@ -11,7 +11,6 @@ package exercise_2_6;
  *
  * @author zayan
  */
-
 import java.util.Scanner;
 
 public class Exercise_2_6 {
