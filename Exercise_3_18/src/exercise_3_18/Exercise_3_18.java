@@ -1,3 +1,18 @@
+/*
+(Cost of shipping) A shipping company uses the following function to calculate the 
+cost (in dollars) of shipping based on the weight of the package (in pounds).
+
+c(w) = 
+        2.5, if 0 < w <= 2
+        4.5, if 2 < w <= 4
+        7.5, if 4 < w <= 10
+        10.5, if 10 < w <= 20
+
+Write a program that prompts the user to enter the weight of the package and 
+display the shipping cost. If the weight is greater than 20, display a message “the 
+package cannot be shipped.”
+*/
+
 package exercise_3_18;
 
 /**
@@ -13,23 +28,25 @@ public class Exercise_3_18 {
 
         System.out.print("Enter the weight of the package: ");
         double weight = input.nextDouble();
-
-        if (weight > 20) {
+        
+        if (weight <= 0) {
+            System.out.println("Not a right weight!");
+        } else if (weight > 20) {
             System.out.println("The package cannot be shipped.");
         } else {
-            double costPerPound; 
+            double shippingCost; 
             
-            if (weight > 0 && weight <= 2) {
-                costPerPound = 2.5;
+            if (weight <= 2) {
+                shippingCost = 2.5;
             } else if (weight <= 4) {
-                costPerPound = 4.5;
+                shippingCost = 4.5;
             } else if (weight <= 10) {
-                costPerPound = 7.5;
+                shippingCost = 7.5;
             } else { //if (weight <= 20)
-                costPerPound = 10.5;
+                shippingCost = 10.5;
             }
             
-            System.out.println("Shipping cost of package is $" + costPerPound);
+            System.out.println("Shipping cost of package is $" + shippingCost);
         }
     }
     

@@ -26,8 +26,8 @@ public class Exercise_3_4 {
             case 9: System.out.println("September"); break;
             case 10: System.out.println("October"); break;
             case 11: System.out.println("November"); break;
-            case 12: System.out.println("December"); break;
-            default: System.out.println("Wrong number."); break;
+            case 12: System.out.println("December"); //break;
+            //default: System.out.println("Wrong number."); break;
         }
     }
     

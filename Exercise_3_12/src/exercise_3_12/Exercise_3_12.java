@@ -19,12 +19,18 @@ public class Exercise_3_12 {
         
         System.out.print("Enter a three-digit integer: ");
         int originalNum = input.nextInt();
+      
+        if (originalNum > 99 && originalNum < 1000) {
+            int lastDigit = originalNum % 10;
+            int firstDigit = originalNum / 100;
+
+            System.out.print(originalNum);
+            System.out.println(lastDigit == firstDigit ? " is a palindrome" : " is not a palindrome");
+        } else {
+            System.out.println("Out of range!");
+            System.out.println("Number should be three-digit between 99 & 1000!");
+        }
         
-        int lastDigit = originalNum % 10;
-        int firstDigit = originalNum / 100;
-        
-        System.out.print(originalNum);
-        System.out.println(lastDigit == firstDigit ? " is a palindrome" : " is not a palindrome");
     }
     
 }
