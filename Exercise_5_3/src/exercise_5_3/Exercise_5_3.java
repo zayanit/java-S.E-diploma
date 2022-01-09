@@ -1,6 +1,13 @@
 /*
 (Conversion from Cº to Fº) Write a program that displays the following table (note 
 that farenheit = celsius * 9/5 + 32)
+
+Celsius     Fahrenheit 
+0           32.0 
+2           35.6 
+...
+98          208.4 
+100         212.0 
 */
 package exercise_5_3;
 
@@ -20,6 +27,7 @@ public class Exercise_5_3 {
         for (int count = 0; count <= 100; count += 2) {
             celsius = count;
             fahrenheit = celsius * 9 / 5 + 32;
+            
             System.out.printf("%-3.0f%17.1f\n", celsius, fahrenheit);
         }
     }
