@@ -25,8 +25,10 @@ public class Exercise_2_6 {
             System.out.println("Out of range!");
             System.out.println("Number should be between 0 & 1000!");
         } else {
-            int number = initialNumber;
-            int multiplication = initialNumber % 10;
+            int number, multiplication;
+            
+            number = initialNumber;
+            multiplication = number % 10;
             
             number /= 10;
             multiplication *= number % 10;
