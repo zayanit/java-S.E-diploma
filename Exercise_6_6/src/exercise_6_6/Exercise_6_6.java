@@ -39,6 +39,15 @@ public class Exercise_6_6 {
             
             System.out.println();
         }
+        
+        for (int i = n; i >= 1; i--) {
+            
+            for (int j = i; j >= 1; j--) {
+                System.out.printf(j + " ");
+            }
+            
+            System.out.println();
+        }
     }
     
 }
